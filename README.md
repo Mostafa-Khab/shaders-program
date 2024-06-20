@@ -3,3 +3,7 @@ A simple program based on gfx project. see [https://github.com/Mostafa-Khab/gfx-
 This program draws a certain fragment shader. for example, run:-
 - `./main circle`
 the program will search for circle.frag in shaders directory.
+
+## take a look.
+![nice pattern](imgs/nice.png)
+![colored circles](imgs/circles.png)
