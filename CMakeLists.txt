@@ -22,6 +22,7 @@ set(SOURCES
 add_executable(main ${SOURCES})
 
 if(UNIX)
+  # link to the path where libgfx.so exists.
   target_link_options(main PUBLIC "-Wl,-rpath,/usr/local/lib/")
   target_link_libraries(main PUBLIC
       gfx
