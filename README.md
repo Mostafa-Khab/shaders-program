@@ -8,3 +8,6 @@ the program will search for circle.frag in shaders directory.
 ![sleep](imgs/sleep.png)
 ![nice pattern](imgs/nice.png)
 ![colored circles](imgs/circles.png)
+
+### features
+you can hot-reload currently used shader after editing and saving their files using (R) key on your keyboard.
