@@ -2,3 +2,4 @@ build/*
 shaders/*.bak
 .cache/
 win32-build/
+.gitignore
