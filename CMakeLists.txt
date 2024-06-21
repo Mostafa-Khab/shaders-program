@@ -38,6 +38,7 @@ if(UNIX)
       logger
   )
 elseif(WIN32)
+  target_link_options(main PUBLIC "-static")
   target_link_libraries(main PUBLIC
     gfx
     glfw3
