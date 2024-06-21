@@ -4,6 +4,7 @@
 #include <GFX/graphics.hpp>
 
 #include <string>
+#include <filesystem>
 
 int main(int argc, const char* argv[])
 {
@@ -12,6 +13,16 @@ int main(int argc, const char* argv[])
 
   std::string vshader_file = "../shaders/default.vert"; //"../shaders/" + shader_prefix + ".vert";
   std::string fshader_file = "../shaders/" + shader_prefix + ".frag";
+
+  if(!std::filesystem::exists(vshader_file))
+  {
+    vshader_file = "shaders/default.vert";
+  }
+
+  if(!std::filesystem::exists(fshader_file))
+  {
+    fshader_file = "shaders/" + shader_prefix + ".frag";
+  }
 
   const int width  = 1600;
   const int height = 900;
